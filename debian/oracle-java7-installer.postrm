@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+	purge|remove|abort-install)
+		rm -Rf "/usr/lib/jvm/java-7-oracle" \
+			"/var/cache/oracle-jdk7-installer" \
+			"/usr/lib/oracle-jdk7-installer-unpackdir" \
+			"/usr/lib/jvm/.java-7-oracle.jinfo"
+	;;
+esac
+
+#DEBHELPER#
+
+exit 0
+
+# vim: ts=2 sw=2
