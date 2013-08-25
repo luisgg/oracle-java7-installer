@@ -1,0 +1,15 @@
+diff -uNr oracle-java7-installer-7u25/debian/oracle-java7-installer.postinst oracle-java7-installer-aurex/debian/oracle-java7-installer.postinst
+--- oracle-java7-installer-7u25/debian/oracle-java7-installer.postinst	2013-06-27 17:09:02.000000000 +0200
++++ oracle-java7-installer-aurex/debian/oracle-java7-installer.postinst	2013-08-25 13:39:25.855557892 +0200
+@@ -28,7 +28,10 @@
+ J_DIR=jdk1.7.0_25
+ 
+ # Filenames and checksums
+-case $(uname -m) in
++arch="x86_64"
++[ "$(dpkg --print-architecture)" = "amd64" ] || arch="i686"
++
++case $arch in
+ 'i686'|'i586')
+ 	arch=i386; dld=i586
+ 	# Must be modified for each release
