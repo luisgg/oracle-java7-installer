@@ -1,8 +1,20 @@
-oracle-java7-installer (7u25-0~webupd8~1-0aurex1) precise; urgency=low
+oracle-java7-installer (7u45-0~webupd8~0-0aurex1) precise; urgency=low
 
   * Fixed architecture detection
 
- -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Sun, 25 Aug 2013 14:05:51 +0200
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Thu, 14 Nov 2013 02:46:41 +0100
+
+oracle-java7-installer (7u45-0~webupd8~0) saucy; urgency=medium
+
+  * new JDK7 release
+
+ -- Alin Andrei <webupd8@gmail.com>  Wed, 16 Oct 2013 18:08:24 +0200
+
+oracle-java7-installer (7u40-0~webupd8~0) saucy; urgency=medium
+
+  * new JDK7 release
+
+ -- Alin Andrei <webupd8@gmail.com>  Wed, 11 Sep 2013 13:50:29 +0200
 
 oracle-java7-installer (7u25-0~webupd8~1) saucy; urgency=medium
 
